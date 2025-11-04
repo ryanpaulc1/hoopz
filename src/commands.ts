@@ -1,14 +1,10 @@
-import type { PlainMessage, SlashCommand } from '@towns-protocol/proto'
-
-const commands = [
+export const commands = [
     {
-        name: 'help',
-        description: 'Get help with bot commands',
+        name: 'hoopshot',
+        description: 'Basketball moving hoop - time your shot!',
     },
     {
-        name: 'time',
-        description: 'Get the current time',
+        name: 'hooptourney',
+        description: 'Moving hoop tournament - compete with others!',
     },
-] as const satisfies PlainMessage<SlashCommand>[]
-
-export default commands
+]
